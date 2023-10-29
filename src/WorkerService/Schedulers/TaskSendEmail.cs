@@ -2,7 +2,7 @@
 
 namespace WorkerService.Schedulers;
 
-public class TaskSendEmail : WorkerExtensions
+public class TaskSendEmail : WorkerService
 {
     private readonly ILogger<TaskSendEmail> _logger;
     public TaskSendEmail(IScheduleConfig<TaskSendEmail> config, IServiceProvider serviceProvider, ILogger<TaskSendEmail> logger)

@@ -2,7 +2,7 @@
 
 namespace WorkerService.Schedulers;
 
-public class TaskCheckDataBase : WorkerExtensions
+public class TaskCheckDataBase : WorkerService
 {
     private readonly ILogger<TaskCheckDataBase> _logger;
     public TaskCheckDataBase(IScheduleConfig<TaskCheckDataBase> config, IServiceProvider serviceProvider, ILogger<TaskCheckDataBase> logger)
